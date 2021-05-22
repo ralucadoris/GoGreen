@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/card_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/app_32_margin"
+        android:layout_marginTop="@dimen/app_32_margin"
+        android:layout_marginEnd="@dimen/app_32_margin"
+        android:textColorHint="@color/register_field_input_color"
+        android:theme="@style/EditTextLoginStyle"
+        android:transitionGroup="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/card_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/register_field_input_color"
+            android:hint="@string/card_number_hint"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/holder_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/app_32_margin"
+        android:layout_marginEnd="@dimen/app_32_margin"
+        android:textColorHint="@color/register_field_input_color"
+        android:theme="@style/EditTextLoginStyle"
+        android:transitionGroup="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/holder_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/register_field_input_color"
+            android:hint="@string/card_holder_hint"
+            android:inputType="text"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/month_til"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/app_32_margin"
+            android:layout_marginEnd="@dimen/app_32_margin"
+            android:minWidth="@dimen/app_72_margin"
+            android:textColorHint="@color/register_field_input_color"
+            android:theme="@style/EditTextLoginStyle"
+            android:transitionGroup="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/month_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/register_field_input_color"
+                android:hint="@string/card_month"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/year_til"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/app_8_margin"
+            android:layout_marginEnd="@dimen/app_32_margin"
+            android:minWidth="@dimen/app_72_margin"
+            android:textColorHint="@color/register_field_input_color"
+            android:theme="@style/EditTextLoginStyle"
+            android:transitionGroup="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/year_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/register_field_input_color"
+                android:hint="@string/card_year"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cvv_til"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/app_8_margin"
+            android:layout_marginEnd="@dimen/app_32_margin"
+            android:minWidth="@dimen/app_72_margin"
+            android:textColorHint="@color/register_field_input_color"
+            android:theme="@style/EditTextLoginStyle"
+            android:transitionGroup="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cvv_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/register_field_input_color"
+                android:hint="@string/card_cvv"
+                android:inputType="numberDecimal"
+                android:textColor="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</merge>

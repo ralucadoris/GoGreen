@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_32_margin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_48_margin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp"
+            tools:text="Hello Dorel" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/scooter_btn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/scooter_btn"
+            app:icon="@drawable/ic_scooter"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/app_32_margin" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bike_btn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/app_32_margin"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/bicycle_btn"
+            app:icon="@drawable/ic_bicycle"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/app_32_margin" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bus_btn"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/app_32_margin"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/bus_btn"
+            app:icon="@drawable/ic_bus"
+            app:iconGravity="textStart"
+            app:iconPadding="@dimen/app_32_margin" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/app_56_margin"
+            android:layout_marginTop="@dimen/app_48_margin"
+            android:background="@color/white"
+            android:text="@string/logout_btn"
+            android:textColor="@color/colorPrimary"
+            app:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

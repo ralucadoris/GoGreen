@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7AD31A</color>
+    <color name="colorPrimaryLight">#7AD31A</color>
+    <color name="colorPrimaryDark">#74c718</color>
+    <color name="colorAccent">#ffffffff</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="red">#ED1E28</color>
+    <color name="purple">#50309a</color>
+    <color name="grey">#90A4AE</color>
+    <color name="black">#000000</color>
+
+    <color name="register_field_input_color">#ffffffff</color>
+
+</resources>

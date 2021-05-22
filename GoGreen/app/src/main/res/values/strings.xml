@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Go Green</string>
+
+    <!-- Strings related to login -->
+    <string name="welcome">"Welcome !"</string>
+
+    <!-- Strings related to login -->
+    <string name="login_page_title">Sign in</string>
+    <string name="first_name_hint">Name</string>
+    <string name="phone_hint">Phone</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="card_number_hint">Card number</string>
+    <string name="card_holder_hint">Cardholder name</string>
+    <string name="card_month">MM</string>
+    <string name="card_year">YY</string>
+    <string name="card_cvv">CVV</string>
+    <string name="loading_text">Loading, please wait…</string>
+    <string name="login_btn">Sign in</string>
+    <string name="invalid_field">This field is required</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+
+    <!-- Strings related to main -->
+    <string name="scooter_btn">Electric scooter</string>
+    <string name="bicycle_btn">Bicycle</string>
+    <string name="bus_btn">Bus</string>
+    <string name="logout_btn">Logout</string>
+
+    <!-- permisions-->
+    <string name="permission_denied_title">Permission needed</string>
+    <string name="permission_denied_msg">For using this function you have to change the app permissions. Please open the Settings menu and grant access to the requested permissions.</string>
+    <string name="permission_denied_settings_button">Settings</string>
+    <string name="permission_denied_cancel_btn">Cancel</string>
+
+    <!-- location-->
+    <string name="google_maps_key">AIzaSyBTmbVRabtSSyU1Pai6mbOjTXB214E2qvU</string>
+    <string name="google_maps_release_key">AIzaSyAwGzMk-NDka3xPE4Ua7jhFNnmBjvXayB4</string>
+
+
+
+
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/container_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/login_page_title"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/app_32_margin"
+                android:paddingBottom="@dimen/app_32_margin">
+
+                <include layout="@layout/form_input_fields" />
+
+                <include layout="@layout/card_fields" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_56_margin"
+                    android:layout_margin="@dimen/app_32_margin"
+                    android:background="@color/white"
+                    android:text="@string/login_btn"
+                    android:textColor="@color/colorPrimary"
+                    app:backgroundTint="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/app_72_margin" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

@@ -1,0 +1,84 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/app_32_margin"
+        android:layout_marginEnd="@dimen/app_32_margin"
+        android:textColorHint="@color/register_field_input_color"
+        android:theme="@style/EditTextLoginStyle"
+        android:transitionGroup="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/register_field_input_color"
+            android:hint="@string/first_name_hint"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/app_32_margin"
+        android:layout_marginEnd="@dimen/app_32_margin"
+        android:textColorHint="@color/register_field_input_color"
+        android:theme="@style/EditTextLoginStyle"
+        android:transitionGroup="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/register_field_input_color"
+            android:hint="@string/phone_hint"
+            android:inputType="phone"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/app_32_margin"
+        android:layout_marginEnd="@dimen/app_32_margin"
+        android:textColorHint="@color/register_field_input_color"
+        android:theme="@style/EditTextLoginStyle"
+        android:transitionGroup="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/register_field_input_color"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress|textNoSuggestions"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/app_32_margin"
+        android:layout_marginTop="@dimen/app_8_margin"
+        android:layout_marginEnd="@dimen/app_32_margin"
+        android:textColorHint="@color/register_field_input_color"
+        android:theme="@style/EditTextLoginStyle"
+        android:transitionGroup="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/register_field_input_color"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</merge>
