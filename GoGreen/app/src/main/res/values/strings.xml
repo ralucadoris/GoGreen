@@ -17,6 +17,7 @@
     <string name="card_cvv">CVV</string>
     <string name="loading_text">Loading, please wait…</string>
     <string name="login_btn">Sign in</string>
+    <string name="register_btn">Register</string>
     <string name="invalid_field">This field is required</string>
     <string name="invalid_password">Password must be >5 characters</string>
 

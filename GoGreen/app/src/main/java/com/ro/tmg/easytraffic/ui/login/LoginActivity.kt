@@ -4,6 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.inputmethod.EditorInfo
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 import com.ro.tmg.easytraffic.R
 import com.ro.tmg.easytraffic.ui.login.models.LoginFormState
 import com.ro.tmg.easytraffic.ui.main.MainActivity
@@ -15,16 +18,34 @@ import kotlinx.android.synthetic.main.form_input_fields.*
 class LoginActivity : AppCompatActivity(), LoginActivityView {
 
     private val loginPresenter: LoginPresenter = LoginPresenter()
+    lateinit var auth:FirebaseAuth
+    lateinit var userDatabaseReference:DatabaseReference
+    lateinit var database: FirebaseDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        auth= FirebaseAuth.getInstance();
+        database= FirebaseDatabase.getInstance();
+        userDatabaseReference= database!!.reference.child("User");
         loginPresenter.bind(this)
 
         setListeners()
     }
 
+    private fun registerBtnCLicked() {
+
+        loginPresenter.register(auth,userDatabaseReference,database, name_et.text.toString(), phone_et.text.toString(),
+            email_et.text.toString(), password_et.text.toString(),
+            card_et.text.toString(), holder_et.text.toString(),
+            month_et.text.toString(), year_et.text.toString(), cvv_et.text.toString()
+        )
+
+    }
+
+
     private fun setListeners() {
+        register_btn.setOnClickListener { registerBtnCLicked() }
         login_btn.setOnClickListener { loginBtnClicked() }
         cvv_et.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
@@ -35,7 +56,7 @@ class LoginActivity : AppCompatActivity(), LoginActivityView {
     }
 
     private fun loginBtnClicked() {
-        loginPresenter.login(
+        loginPresenter.login(auth,
             name_et.text.toString(), phone_et.text.toString(),
             email_et.text.toString(), password_et.text.toString(),
             card_et.text.toString(), holder_et.text.toString(),

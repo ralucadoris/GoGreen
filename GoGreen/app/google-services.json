@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "1079808966905",
+    "firebase_url": "https://greengo-a0c99-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "greengo-a0c99",
+    "storage_bucket": "greengo-a0c99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079808966905:android:1dbe8f900981e26603a228",
+        "android_client_info": {
+          "package_name": "com.ro.tmg.easytraffic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079808966905-t6lsnnkr9eugn8jcj5ogtq4e9d8q63pc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTA3DpWfjXRbgLhlpMSD94Y14N2mkM1HA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079808966905-t6lsnnkr9eugn8jcj5ogtq4e9d8q63pc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079808966905:android:74c19e9ee119d62803a228",
+        "android_client_info": {
+          "package_name": "com.ro.tmg.easytraffic.ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079808966905-fb6stne3k89upln4m4au7dp4eeg36p0o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ro.tmg.easytraffic.ui",
+            "certificate_hash": "6d3de02062fbd8ecc298d3c27887caea0ced61f6"
+          }
+        },
+        {
+          "client_id": "1079808966905-t6lsnnkr9eugn8jcj5ogtq4e9d8q63pc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTA3DpWfjXRbgLhlpMSD94Y14N2mkM1HA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079808966905-t6lsnnkr9eugn8jcj5ogtq4e9d8q63pc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

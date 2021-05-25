@@ -43,15 +43,31 @@
 
                 <include layout="@layout/card_fields" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/login_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/app_56_margin"
-                    android:layout_margin="@dimen/app_32_margin"
-                    android:background="@color/white"
-                    android:text="@string/login_btn"
-                    android:textColor="@color/colorPrimary"
-                    app:backgroundTint="@color/white" />
+                <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/login_btn"
+                        android:layout_width="115dp"
+                        android:layout_height="@dimen/app_56_margin"
+                        android:layout_margin="@dimen/app_32_margin"
+                        android:background="@color/white"
+                        android:text="@string/login_btn"
+                        android:textColor="@color/colorPrimary"
+                        app:backgroundTint="@color/white" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/register_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/app_56_margin"
+                        android:layout_margin="@dimen/app_32_margin"
+                        android:background="@color/white"
+                        android:text="@string/register_btn"
+                        android:textColor="@color/colorPrimary"
+                        app:backgroundTint="@color/white" />
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"

@@ -16,6 +16,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.google.firebase.auth.FirebaseAuth
 import com.ro.tmg.easytraffic.R
 import com.ro.tmg.easytraffic.ui.location.LocationActivity
 import com.ro.tmg.easytraffic.ui.login.LoginActivity
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     private val permissionRequestCode = 100
     private lateinit var appSharedPreference: AppSharedPreference
+    private var auth: FirebaseAuth?=null
 
     companion object {
         const val BUNDLE_NAME = "bundle"
@@ -38,7 +40,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
-
+        auth= FirebaseAuth.getInstance();
         appSharedPreference = AppSharedPreference(this)
         setUserName()
         setListeners()
@@ -67,6 +69,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun logoutUser() {
         appSharedPreference.clearSharedPrefs()
+        auth?.signOut()
         startActivity(Intent(this, LoginActivity::class.java))
         finish()
     }
